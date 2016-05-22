@@ -1,7 +1,7 @@
 function advdiff(ka,R)
 m = 0;
 x = [0:0.01:1]; 
-t = [0:0.001:1];
+t = [0:0.01:1];
 pars=[ka,R];
 sol = pdepe(m,@advdiffpde,@advdiffic,@advdiffbc,x,t,[],pars);
 u1 = sol(:,:,1);
